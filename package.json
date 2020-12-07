@@ -1,0 +1,21 @@
+{
+  "name": "jsdoc-tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docs": "jsdoc -c jsdoc.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "fucazu-minami": "^1.1.7",
+    "jsdoc": "^3.6.6"
+  },
+  "dependencies": {
+    "docdash": "^1.2.0",
+    "jsdoc-template": "git+https://github.com/braintree/jsdoc-template.git",
+    "minami": "^1.2.3"
+  }
+}
