@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "docs": "jsdoc -c jsdoc.json"
+    "docs": "jsdoc -c jsdoc.json",
+    "clean": "rimraf docs",
+    "docs:deploy": "npm run clean && npm run docs && gh-pages -d docs"
   },
   "keywords": [],
   "author": "",
@@ -12,7 +14,8 @@
   "devDependencies": {
     "fucazu-minami": "^1.1.7",
     "jsdoc": "^3.6.6",
-    "jsdoc-http-plugin": "^0.3.2"
+    "jsdoc-http-plugin": "^0.3.2",
+    "rimraf": "^3.0.2"
   },
   "dependencies": {
     "docdash": "^1.2.0",
