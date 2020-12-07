@@ -7,7 +7,8 @@
     "excludePattern": "(node_modules|docs)"
   },
   "plugins": [
-    "plugins/markdown"
+    "plugins/markdown",
+    "jsdoc-http-plugin"
   ],
   "templates": {
     "cleverLinks": true,
