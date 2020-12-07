@@ -36,3 +36,39 @@ class Programmer {
  */
 const newProgrammer = new Programmer({ fullname: "Ryan Ray" }, "golang");
 newProgrammer.getInfo();
+
+/**
+ * Github Library
+ * @example
+ * const github = new Github({
+ *  username: 'fazt',
+ *  token: 'xyz123'
+ * });
+ *
+ * const repositories = github.getRepositories();
+ *
+ * @see https://developer.github.com/v3/repos/#list-public-repositories
+ *
+ * @todo Implement the rest of methods
+ */
+class Github {
+  /**
+   * @param {Object} options
+   * @param {string} options.user your username
+   * @param {string} options.token secret token
+   */
+  constructor({ user, token }) {
+    this.user = user;
+    this.token = token;
+  }
+
+  /**
+   * List of all Public User's Repositories
+   * @param {Object} options
+   * @param {Number} [options.limit=6] The limit of respositories to return
+   * @return {Array<Object>} An array of public repositories
+   */
+  getRepositories({ limit = 6 }) {
+    return [];
+  }
+}
